@@ -1,5 +1,5 @@
 # Processing-Extension
-This repository contains the budding Processing Extension for NetLogo. <a href="http:/processing.org>Processing</a> is a Java based language that's great for creating cool visualizations. Our hope is that this extension will let users build cool visualizations of their NetLogo models.
+This repository contains the budding Processing Extension for NetLogo. [Processing](http://www.processing.org) is a Java based language that's great for creating cool visualizations. Our hope is that this extension will let users build cool visualizations of their NetLogo models.
 # How to use it
 1. Get the Processing Extension on to your computer. We suggest forking the code, so you can make changes that won't conflict with the master branch.
 2. Copy/paste your sketch into the NetLogoProcessing.java file.
