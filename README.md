@@ -14,7 +14,7 @@ The Processing sketch has just four primitives.
 
 ### call
 `nlp:call "method-name" [arguments]`
-You ue `call` to call methods in your Processing sketch. For instance, if you want to call your draw method (which is void), use `nlp:call "draw"[]`.
+You use `call` to call methods in your Processing sketch. For instance, if you want to call your draw method (which is void), use `nlp:call "draw"[]`.
 
 ### draw
 `nlp:draw` redraws your sketch. We separated this out so that you are in control of when your sketch uses CPU to redraw. You will often want to call it after you have done anything that changed the state of your sketch.
