@@ -51,7 +51,7 @@ public class ProcessingExtension implements ClassManager {
 	@Override
 	public void load(PrimitiveManager pm) throws ExtensionException {
 		pm.addPrimitive("show", new ShowFrame());
-		pm.addPrimitive("kill", new Kill());
+		pm.addPrimitive("close", new Close());
 		pm.addPrimitive("call", new Call());
 		pm.addPrimitive("draw", new Draw());
 	}
@@ -196,7 +196,7 @@ public class ProcessingExtension implements ClassManager {
 		}
 	}
 
-    public static class Kill extends DefaultCommand {
+    public static class Close extends DefaultCommand {
         public Syntax getSyntax() {
             return Syntax.commandSyntax(
                     // we take in nothing

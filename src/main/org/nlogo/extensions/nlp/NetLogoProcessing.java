@@ -29,7 +29,15 @@ public class NetLogoProcessing extends PApplet {
 		return pg;
 	}
 	
-	
+	/*
+	 * Copy/paste your code in below here. 
+	 * Just like in regular Processing your code MUST include:
+	 * void setup()
+	 * void draw()
+	 * 
+	 */
+    
+    
 	public void setup(){
 		this.size(500,500);
 		this.background(0);
