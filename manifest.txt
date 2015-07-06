@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Extension-Name: nlp
+Class-Manager: main.org.nlogo.extensions.nlp.ProcessingExtension
+NetLogo-Extension-API-Version: 5.0
