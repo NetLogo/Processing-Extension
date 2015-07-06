@@ -17,13 +17,7 @@ public class NetLogoProcessing extends PApplet {
         super();
     }
 
-    public void loadSketch(String path){
-        String[] stringArray = new String[] {path};
-//        this.runSketch(stringArray);
-    }
-
-	
-	protected PGraphics makeGraphics(int iwidth, int iheight,
+    protected PGraphics makeGraphics(int iwidth, int iheight,
 			String irenderer, String ipath,
 			boolean iprimary) {
 
@@ -33,6 +27,28 @@ public class NetLogoProcessing extends PApplet {
 		pg.setPath(null);
 		pg.setSize(iwidth, iheight);
 		return pg;
+	}
+	
+	
+	public void setup(){
+		this.size(500,500);
+		this.background(0);
+		noLoop();
+	}
+	
+	public void draw(){
+		float r = random(255);
+		float g = random(255);
+		float b = random(255);
+		background(r,g,b);
+	}
+	
+	public void blue(){
+		background(0,0,255);
+	}
+	
+	public void red(){
+		background(255,0,0);
 	}
 
 }

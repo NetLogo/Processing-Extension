@@ -29,7 +29,6 @@ public class ProcessingExtension implements ClassManager {
 	@Override
 	public List<String> additionalJars() {
 		ArrayList<String> jars = new ArrayList<String>();
-		jars.add("core.jar");
 		return jars;
 	}
 
@@ -89,7 +88,7 @@ public class ProcessingExtension implements ClassManager {
 				@Override
 				public void run() {
 					// TODO Auto-generated method stub
-					myFrame = new ExampleFrame("/Users/hah661/Documents/Processing/Bubbles/Bubbles.pde");
+					myFrame = new ExampleFrame();
 				}
 
 			});
@@ -141,13 +140,15 @@ public class ProcessingExtension implements ClassManager {
 			} catch (SecurityException e) {
 				throw new ExtensionException(e.getMessage());
 			} catch (NoSuchMethodException e) {
-				throw new ExtensionException(e.getMessage());
+				throw new ExtensionException(
+						"Your Processing sketch does not contain a method called " +methodName);
 			} catch (IllegalArgumentException e) {
-				throw new ExtensionException(e.getMessage());
+				throw new ExtensionException(
+						"The method " + methodName + " can't take the following arguments: " + actuals);
 			} catch (IllegalAccessException e) {
-				throw new ExtensionException(e.getMessage());
+				throw new ExtensionException("Something went wrong: "+e.getMessage());
 			} catch (InvocationTargetException e) {
-				throw new ExtensionException(e.getMessage());
+				throw new ExtensionException("Something went wrong: "+e.getMessage());
 			} 
 		}
 		

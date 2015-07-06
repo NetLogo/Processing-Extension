@@ -1,0 +1,16 @@
+.classpath
+*.class
+project/*
+*.cache
+.gitignore.swp
+*.xml
+.project
+*.xsl
+./settings/*
+project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/input_dsp
+
+project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp
+
+project/target/streams/$global/ivySbt/$global/streams/out
+
+project/target/streams/compile/exportedProducts/$global/streams/export
