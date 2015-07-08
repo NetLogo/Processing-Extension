@@ -26,7 +26,7 @@ libraryDependencies ++= Seq(
   "asm" % "asm-all" % "3.3.1" % "test"
 )
 
-artifactName := { (_, _, _) => "cf.jar" }
+artifactName := { (_, _, _) => "nlp.jar" }
 
 packageOptions +=
   Package.ManifestAttributes(
